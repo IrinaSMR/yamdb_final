@@ -8,7 +8,9 @@ services:
       - ./.env
   
   web:
-    image: irinasmr/api_yamdb:latest
+    build:
+      context: .
+      file: api_yamdb/Dockerfile
     restart: always
     volumes:
       - static_value:/app/static/
