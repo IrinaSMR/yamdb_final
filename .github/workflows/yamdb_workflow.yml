@@ -73,8 +73,6 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            echo DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }} >> .env
-            echo DOCKER_PASSWORD=${{ secrets.DOCKER_PASSWORD }} >> .env
             sudo docker-compose up -d
 
   send_message:
