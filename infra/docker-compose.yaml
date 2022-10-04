@@ -8,7 +8,7 @@ services:
       - ./.env
   
   web:
-    build: ../yamdb
+    image: irinasmr/yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
