@@ -50,15 +50,6 @@ python -m pip install --upgrade pip
 pytest
 ```
 
-В файле nginx/default.conf в строке server_name укажите IP виртуальной машины (сервера).
-Скопируйте подготовленные файлы docker-compose.yaml и nginx/default.conf из проекта на сервер:
-
-```
-scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
-sudo mkdir nginx
-scp default.conf <username>@<host>/home/<username>/nginx/default.conf
-```
-
 В репозитории на GitHub добавьте данные в Settings - Secrets - Actions secrets:
 
 ```
@@ -72,7 +63,7 @@ TELEGRAM_TO - id своего телеграм-аккаунта (можно уз
 TELEGRAM_TOKEN - токен бота (получить токен можно у @BotFather, /token, имя бота)
 ```
 
-При внесении любых изменений в проект, после коммита и пуша:
+При внесении любых изменений в файлы проекта после коммита и пуша:
 
 ```
 git add .
@@ -174,10 +165,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo  docker-compose --version
 ```
 
-Создайте папку nginx:
+В файле nginx/default.conf в строке server_name укажите IP виртуальной машины (сервера).
+Скопируйте подготовленные файлы docker-compose.yaml и nginx/default.conf из проекта на сервер:
 
 ```
+scp docker-compose.yaml <username>@<host>:/home/<username>/docker-compose.yaml
 mkdir nginx
+scp default.conf <username>@<host>:nginx/default.conf
 ```
 ***
 
