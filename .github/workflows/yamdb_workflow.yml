@@ -49,7 +49,7 @@ jobs:
           context: api_yamdb/
           file: api_yamdb/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -63,7 +63,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull irinasmr/yamdb:latest
+            sudo docker pull irinasmr/yamdb_final:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
