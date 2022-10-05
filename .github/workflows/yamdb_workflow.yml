@@ -63,7 +63,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull irinasmr/yambd:latest
+            sudo docker pull irinasmr/yamdb:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env

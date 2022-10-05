@@ -173,7 +173,6 @@ scp docker-compose.yaml <username>@<host>:/home/<username>/docker-compose.yaml
 mkdir nginx
 scp default.conf <username>@<host>:nginx/default.conf
 ```
-***
 
 ### После успешного деплоя:
 
