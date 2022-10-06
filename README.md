@@ -202,7 +202,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 ***
 
-### Проект был запущен и доступен по адресу:
+## Проект был запущен и доступен по адресу:
 
 http://yammydb.hopto.org/
 
