@@ -209,7 +209,7 @@ http://yammydb.hopto.org/admin/
 
 ## Документация API YaMDb
 
-Документация доступна по эндпойнту: http://localhost/redoc/
+Документация доступна по эндпойнту: http://yammydb.hopto.org/static/redoc/
 
 ## Author
 - IrinaSMR
