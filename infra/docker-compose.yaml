@@ -32,6 +32,8 @@ services:
 
       - media_value:/var/html/media/
 
+      - ../templates/redoc.html:/var/html/redoc/redoc.html
+
     depends_on:
       - web
 
