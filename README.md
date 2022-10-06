@@ -202,6 +202,10 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 ***
 
+### Проект был запущен и доступен по адресу:
+
+yammydb.hopto.org
+
 ## Документация API YaMDb
 
 Документация доступна по эндпойнту: http://localhost/redoc/
