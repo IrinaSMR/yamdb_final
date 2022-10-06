@@ -179,13 +179,13 @@ scp default.conf <username>@<host>:nginx/default.conf
 Соберите файлы статики:
 
 ```
-docker-compose exec web python manage.py collectstatic --no-input
+sudo docker-compose exec web python manage.py collectstatic --no-input
 ```
 
 Выполните миграции:
 
 ```
-(опционально) docker-compose exec web python manage.py makemigrations
+(опционально) sudo docker-compose exec web python manage.py makemigrations
 docker-compose exec web python manage.py migrate --noinput
 ```
 
