@@ -32,7 +32,7 @@ services:
 
       - media_value:/var/html/media/
 
-      - ./static/redoc.yaml:/var/html/redoc/redoc.yaml
+      - ./static/redoc.yaml:var/html/static/redoc.yaml
 
       - ./templates/redoc.html:/var/html/redoc/redoc.html
 
