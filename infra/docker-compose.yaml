@@ -32,8 +32,6 @@ services:
 
       - media_value:/var/html/media/
 
-      - ./redoc.yaml:/var/html/static/redoc.yaml
-
     depends_on:
       - web
 
